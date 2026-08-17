@@ -1,47 +1,56 @@
 @charset "UTF-8";
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Impede que paddings estoure a largura das divs */
 }
 
-body, html{
+body, html {
     background-color: blueviolet;
-    height: 100vh;
-    width: 100vw;
-
-
+    min-height: 100vh;
+    width: 100%;
 }
 
-main{
+main {
     position: relative;
-    width: 100vw;
-    display: block;
+    min-height: 100vh;
+    width: 100%;
 }
 
-#login{
+#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     background-color: white;
-    width: 300px;
-    height: 500px;
+    height: 600px;
+    width: 400px;
+    min-height: 350px; /* TROCADO: min-height em vez de height fixo */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.788);
+    transition: width 0.4s, height 0.4s;
 }
 
-section#login > div#foto{
+section#login > div#imagem {
     background: red url(../imagens/pexels-taha-osman-636257934-33175809.jpg);
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom;
-
 }
-section#login > div#formulario{
-    padding: 10px;
+
+section#login > div#formulario {
+    padding: 15px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.9em;
 }
