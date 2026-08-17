@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* TABLET (768px até 991px) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body {
         background-image: linear-gradient(to top, #00bd00, rgb(12, 76, 136));
@@ -8,7 +7,7 @@
 
     section#login {
         width: 80vw;
-        height: 380px; /* Altura fixa para manter lado a lado certinho */
+        height: 380px;
     } 
 
     section#login > div#imagem {
@@ -24,11 +23,10 @@
     }
 
     div#formulario > p {
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 }
 
-/* DESKTOP (992px em diante) */
 @media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #00bd00, rgb(12, 76, 136));
@@ -40,18 +38,18 @@
     }
 
     section#login > div#imagem {
-        float: right; /* Imagem na direita */
+        float: right; 
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario {
-        float: left;  /* Formulário na esquerda */
+        float: left; 
         width: 50%;
         height: 100%;
     }
 
     div#formulario > p {
-        font-size: 1em;
+        font-size: 2em;
     }
 }
