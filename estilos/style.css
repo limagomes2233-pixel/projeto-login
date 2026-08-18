@@ -70,7 +70,22 @@ form > input[type=submit] {
 }
 form > input[type=submit]:hover{
     background-color: rgb(0, 82, 0);
-} 
+}
+div#campo > label{
+    display: none;
+}
+span{
+    color: white;
+    background-color: rgb(114, 224, 4);
+    width: 25px;
+    padding: 6x;
+ }
+ 
+ div#campo > input {
+    background-color: yellowgreen;
+    font-size: 2em;
+    width: 100%-*;
+ }
 
 
 .botao{
